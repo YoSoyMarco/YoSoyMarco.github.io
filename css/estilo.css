@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 10%;  
+    }
+  
+    to {
+      margin-left: 0%; 
+    }
+  }
+
+p.grande {
+	font-size: 50px;
+    text-align:center;
+    color:rgb(143, 141, 141);
+}
+
+p.animado {
+	font-size: 50px;
+    text-align:center;
+    color:rgb(143, 141, 141);
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.imgRedonda {
+    width:500px;
+    height:500px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius:300px;
+    display:block;
+    margin:auto;
+    z-index: 1;
+}
+
+.portada {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width:95%;
+    height: 30%;
+    display:block;
+    margin:auto;
+    z-index: -1;
+}
+
+.spot {
+    width:13%;
+    height: 13%;
+    display:block;
+    margin:auto;
+    z-index: -1;
+}
+
+.lock {
+    width:60%;
+    height: 60%;
+    display:block;
+    margin:auto;
+    z-index: -1;
+}
+
+.hearts {
+    width:40%;
+    height: 40%;
+    display:none;
+    margin:auto;
+    z-index: -1;
+}
+
+.congini {
+    width:40%;
+    height: 40%;
+    display:none;
+    margin:auto;
+    z-index: -1;
+}
+
+.pfelicidades{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 36px;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+.in{
+    display:block;
+    margin:auto;
+    text-align: center;
+    border-radius:20px;
+    border: 5px solid rgb(192, 186, 186);
+    font-size: 50px;
+    width: 50%;
+    color:rgb(143, 141, 141);
+}
+
+.boton{
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    border: 5px solid rgb(192, 186, 186);
+    font-size: 50px;
+    width: 45%;
+    color:rgb(255, 255, 255);
+    box-shadow: 0 9px #999;
+    background-color: #1eb41e;
+}
+
+.boton:hover {background-color: #1b6b1b}
+
+.boton:active {
+    background-color: #1eb41e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
